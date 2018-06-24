@@ -10,5 +10,8 @@ module.exports = {
         browser
     },
 
+    'uiTest': browser => {
+        functions.uiTest(browser)
+    },
 
 }
