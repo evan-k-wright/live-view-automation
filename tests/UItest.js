@@ -1,17 +1,20 @@
 const data = require('../sources/data')
 const functions = require('../sources/functions')
-const selectors = require('../sources/selectors')
 
 module.exports = {
     before: browser => {
         browser.url("http://liveviewtech.com/")
     },
     after: browser => {
-        browser
+        browser.end()
     },
 
-    'uiTest': browser => {
-        functions.uiTest(browser)
+    // 'Menu Bar': browser => {
+    //     functions.uiTest(browser)
+    // },
+
+    'Home Page' : browser => {
+        functions.homePage(browser)
     },
 
 }

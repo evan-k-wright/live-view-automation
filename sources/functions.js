@@ -15,8 +15,13 @@ const uiTest = (browser) => {
         .waitForElementVisible(selectors.software, 5000)
 }
 
+const homePage = (browser) => {
+    browser
+        .waitForElementVisible(selectors.demo, 5000)
+}
 
 module.exports = {
     uiTest: uiTest,
+    homePage : homePage,
 
 }
