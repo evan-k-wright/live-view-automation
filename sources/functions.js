@@ -20,15 +20,28 @@ const homePage = (browser) => {
         .waitForElementVisible(selectors.demo, 5000)
 }
 
-const securitY =(browser) => {
-    let securitY = browser.page.securitY()
-    securitY.navigate()
-        securitY
-            .waitForElementVisible('@securitY', 5000)
+const solutions = (browser) => {
+    let solutions = browser.page.solutions()
+    solutions.navigate()
+        solutions
+            .waitForElementVisible('@secur', 5000)
+            .click('@secur')
+            .waitForElementVisible('@securTitle', 5000)
+            .click('@homePage')
+            .waitForElementVisible('@softWare', 5000)
+            .click('@softWare')
+            .waitForElementVisible('@softWareTitle', 5000)
+            .click('@logo')
+            .waitForElementVisible('@streaming', 5000)
+            .click('@streaming')
+            .waitForElementVisible('@streamingTitleOmni', 5000)
+            .click('@logo')
+            .waitForElementVisible('@actionable', 5000)
+
 }
 
 module.exports = {
     uiTest : uiTest,
     homePage : homePage,
-    securitY : securitY,
+    solutions : solutions,
 }
