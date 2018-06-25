@@ -13,8 +13,8 @@ module.exports = {
     //     functions.uiTest(browser)
     // },
 
-    'Home Page' : browser => {
-        functions.homePage(browser)
-    },
+    // 'Home Page' : browser => {
+    //     functions.homePage(browser)
+    // },
 
 }
