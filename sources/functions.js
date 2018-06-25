@@ -20,8 +20,15 @@ const homePage = (browser) => {
         .waitForElementVisible(selectors.demo, 5000)
 }
 
-module.exports = {
-    uiTest: uiTest,
-    homePage : homePage,
+const securitY =(browser) => {
+    let securitY = browser.page.securitY()
+    securitY.navigate()
+        securitY
+            .waitForElementVisible('@securitY', 5000)
+}
 
+module.exports = {
+    uiTest : uiTest,
+    homePage : homePage,
+    securitY : securitY,
 }

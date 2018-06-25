@@ -17,4 +17,8 @@ module.exports = {
     //     functions.homePage(browser)
     // },
 
+    'Security' : browser => {
+        functions.Security(browser)
+    }
+
 }
