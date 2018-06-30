@@ -9,16 +9,16 @@ module.exports = {
         browser.end()
     },
 
-    'Menu Bar': browser => {
-        functions.uiTest(browser)
-    },
+    // 'Menu Bar': browser => {
+    //     functions.uiTest(browser)
+    // },
 
     'Home Page' : browser => {
         functions.homePage(browser)
     },
 
-    'Security' : browser => {
-        functions.solutions(browser)
-    }
+    // 'Security' : browser => {
+    //     functions.solutions(browser)
+    // }
 
 }

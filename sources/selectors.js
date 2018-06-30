@@ -1,6 +1,7 @@
 module.exports = {
     //UI Test - Menu Bar
         about: 'li[id="menu-item-34"]',
+        actionable: '//h1[.="Actionable Visibility. Anytime, Anywhere."]',
         getAQuote: 'li[id="menu-item-29"]',
         homepage: 'li[id="menu-item-106"]',
         login: 'li[id="menu-item-30"]',

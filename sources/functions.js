@@ -17,6 +17,9 @@ const uiTest = (browser) => {
 
 const homePage = (browser) => {
     browser
+        .useXpath()
+        .waitForElementVisible(selectors.actionable, 5000)
+        .useCss()
         .waitForElementVisible(selectors.demo, 5000)
 }
 
